@@ -1,4 +1,6 @@
-# grunt-mkdocs
+# grunt-mkdocs [![NPM version](https://badge.fury.io/js/grunt-mkdocs.png)](http://badge.fury.io/js/grunt-mkdocs) [![Build Status](https://travis-ci.org/prantlf/grunt-mkdocs.png)](https://travis-ci.org/prantlf/grunt-mkdocs) [![Coverage Status](https://coveralls.io/repos/prantlf/grunt-mkdocs/badge.svg)](https://coveralls.io/r/prantlf/grunt-mkdocs) [![Dependency Status](https://david-dm.org/prantlf/grunt-mkdocs.svg)](https://david-dm.org/prantlf/grunt-mkdocs) [![devDependency Status](https://david-dm.org/prantlf/grunt-mkdocs/dev-status.svg)](https://david-dm.org/prantlf/grunt-mkdocs#info=devDependencies) [![devDependency Status](https://david-dm.org/prantlf/grunt-mkdocs/peer-status.svg)](https://david-dm.org/prantlf/grunt-mkdocs#info=peerDependencies) [![Code Climate](https://codeclimate.com/github/prantlf/grunt-mkdocs/badges/gpa.svg)](https://codeclimate.com/github/prantlf/grunt-mkdocs) [![Codacy Badge](https://www.codacy.com/project/badge/f3896e8dfa5342b8add12d50390edfcd)](https://www.codacy.com/public/prantlf/grunt-mkdocs) [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
+
+[![NPM Downloads](https://nodei.co/npm/grunt-mkdocs.png?downloads=true&stars=true)](https://www.npmjs.com/package/grunt-mkdocs)
 
 > Grunt plugin generating documentation web site from Markdown sources
   using mkdocs

@@ -49,6 +49,12 @@ module.exports = function (grunt) {
         src:    '*.js',
         dest:   'coverage/tasks/'
       }
+    },
+
+    coveralls: {
+      tests: {
+        src: 'coverage/tests.lcov'
+      }
     }
 
   });
@@ -59,6 +65,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('test', ['jshint', 'clean:tests', 'mkdocs', 'nodeunit']);
   grunt.registerTask('instrument', ['jshint', 'clean', 'jscoverage']);
+  grunt.registerTask('post_coverage', ['test', 'coveralls']);
   grunt.registerTask('default', ['test']);
 
 };
