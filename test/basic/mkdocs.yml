@@ -1,0 +1,4 @@
+site_name: MkLorum
+pages:
+- [index.md, Home]
+- [about.md, About]
