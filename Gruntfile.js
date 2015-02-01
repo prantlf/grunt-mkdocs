@@ -55,6 +55,31 @@ module.exports = function (grunt) {
       tests: {
         src: 'coverage/tests.lcov'
       }
+    },
+
+    sonarRunner: {
+      analysis: {
+        options: {
+          debug: true,
+          separator: '\n',
+          sonar: {
+            host: {
+              url: 'http://localhost:9000'
+            },
+            jdbc: {
+              url: 'jdbc:mysql://localhost:3306/sonar',
+              username: 'sonar',
+              password: 'sonar'
+            },
+            projectKey: 'sonar:grunt-mkdocs:0.1.1',
+            projectName: 'grunt-mkdocs',
+            projectVersion: '0.1.1',
+            sources: 'tasks',
+            language: 'js',
+            sourceEncoding: 'UTF-8'
+          }
+        }
+      }
     }
 
   });
@@ -66,6 +91,7 @@ module.exports = function (grunt) {
   grunt.registerTask('test', ['jshint', 'clean:tests', 'mkdocs', 'nodeunit']);
   grunt.registerTask('instrument', ['jshint', 'clean', 'jscoverage']);
   grunt.registerTask('post_coverage', ['test', 'coveralls']);
+  grunt.registerTask('analyze', ['sonarRunner']);
   grunt.registerTask('default', ['test']);
 
 };
