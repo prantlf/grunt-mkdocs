@@ -48,6 +48,6 @@
     "grunt",
     "documentation",
     "doc",
-    "mdoc"
+    "mkdocs"
   ]
 }
