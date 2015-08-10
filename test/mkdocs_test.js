@@ -15,7 +15,9 @@ exports.mkdocs = {
           'img',
           'index.html',
           'js',
-          'license'
+          'license',
+          'mkdocs',
+          'sitemap.xml'
         ],
         actual = fs.readdirSync('test/basic/site').sort();
 
