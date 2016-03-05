@@ -10,16 +10,26 @@ exports.mkdocs = {
     var expected = [
           '404.html',
           'about',
+          'base.html',
+          'content.html',
           'css',
           'fonts',
           'img',
           'index.html',
           'js',
-          'license',
           'mkdocs',
-          'sitemap.xml'
+          'nav-sub.html',
+          'nav.html',
+          'sitemap.xml',
+          'toc.html'
         ],
-        actual = fs.readdirSync('test/basic/site').sort();
+        actual = fs.readdirSync('test/basic/site')
+          // Workaround for an apparent bug in mkdocs; some files are
+          // copied to the output directory
+          .filter(function (name) {
+            return !/\.py(?:c)?$/.test(name);
+          })
+          .sort();
 
     test.deepEqual(expected, actual, 'should generate output files');
 
