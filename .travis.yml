@@ -8,11 +8,11 @@ node_js :
 python:
     - "2.7"
 before_install:
-    # Workaround for missing support of multiple languages in Travis;
-    # Luckily, root sees python and pip executables and can add mkdocs
-    - sudo pip install mkdocs
+    - export PATH=$HOME/.local/bin:$PATH
+    - pip install mkdocs --user `whoami`
     - npm install -g npm
 before_script :
     - npm install -g grunt-cli
 after_script:
     - npm run coveralls
+sudo: false
