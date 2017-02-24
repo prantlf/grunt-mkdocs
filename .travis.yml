@@ -10,7 +10,7 @@ python:
     - "2.7"
 before_install:
     - export PATH=$HOME/.local/bin:$PATH
-    - pip install mkdocs --user `whoami`
+    - pip install --user mkdocs
     - npm install -g npm
 before_script :
     - npm install -g grunt-cli
