@@ -10,18 +10,13 @@ exports.mkdocs = {
     var expected = [
           '404.html',
           'about',
-          'base.html',
-          'content.html',
           'css',
           'fonts',
           'img',
           'index.html',
           'js',
           'mkdocs',
-          'nav-sub.html',
-          'nav.html',
-          'sitemap.xml',
-          'toc.html'
+          'sitemap.xml'
         ],
         actual = fs.readdirSync('test/basic/site')
           // Workaround for an apparent bug in mkdocs; some files are
