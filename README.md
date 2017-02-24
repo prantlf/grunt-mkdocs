@@ -123,7 +123,7 @@ your code using Grunt.
 
 ## Release History
 
- * 2016-02-24   v0.2.1   Upgrade dependencies
+ * 2016-02-24   v0.2.2   Upgrade dependencies
  * 2016-26-08   v0.2.0   Upgrade to Grunt 1.x
  * 2015-07-30   v0.1.0   Initial release
 
