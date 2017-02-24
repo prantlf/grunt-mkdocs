@@ -1,7 +1,7 @@
 {
   "name": "grunt-mkdocs",
   "description": "Grunt plugin generating documentation web site from Markdown sources using mkdocs",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "homepage": "https://github.com/prantlf/grunt-mkdocs",
   "author": {
     "name": "Ferdinand Prantl",
