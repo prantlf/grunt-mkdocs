@@ -15,7 +15,7 @@ exports.mkdocs = {
           'img',
           'index.html',
           'js',
-          'mkdocs',
+          'search',
           'sitemap.xml'
         ],
         actual = fs.readdirSync('test/basic/site')
