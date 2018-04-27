@@ -123,13 +123,14 @@ your code using Grunt.
 
 ## Release History
 
+ * 2018-04-27   v1.0.0   Dropped support of Node.js 4
  * 2016-02-24   v0.2.3   Upgrade dependencies
  * 2016-26-08   v0.2.0   Upgrade to Grunt 1.x
  * 2015-07-30   v0.1.0   Initial release
 
 ## License
 
-Copyright (c) 2015-2017 Ferdinand Prantl
+Copyright (c) 2015-2018 Ferdinand Prantl
 
 Licensed under the MIT license.
 
